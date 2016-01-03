@@ -12,7 +12,9 @@ class UpdateUsersTableAdmin extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('users', function(Blueprint $table) {
+            $table->tinyInteger('is_admin')->after('password');
+        });
     }
 
     /**
@@ -22,6 +24,8 @@ class UpdateUsersTableAdmin extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('users', function(Blueprint $table) {
+            $table->dropColumn('is_admin');
+        });
     }
 }

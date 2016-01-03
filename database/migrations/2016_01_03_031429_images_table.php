@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePostsTable extends Migration
+class ImagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +12,11 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('posts', function(Blueprint $table) {
-            $table->increments('post_id');
-            $table->string('title', 255);
-            $table->string('subject', 1000);
-            $table->text('body');
+        Schema::create('images', function(Blueprint $table) {
+            $table->increments('image_id');
+            $table->string('image_title', 1000);
+            $table->string('image_description', 2000);
+            $table->integer('album_key')->unsigned();
             $table->integer('author_id')->unsigned();
             $table->timestamps();
             $table->softDeletes();
@@ -30,6 +30,6 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('posts');
+        Schema::drop('images');
     }
 }
