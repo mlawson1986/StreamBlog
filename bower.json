@@ -1,0 +1,29 @@
+{
+  "name": "stream_blog",
+  "description": "Stream Blog View Dependencies",
+  "main": "",
+  "authors": [
+    "Mike <mlawson1986@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "stream",
+    "blog"
+  ],
+  "homepage": "https://github.com/mlawson1986/StreamBlog",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.6",
+    "jquery": "~2.2.0",
+    "vue": "~1.0.13",
+    "ckeditor": "~4.5.6"
+  }
+}

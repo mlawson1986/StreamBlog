@@ -1,0 +1,34 @@
+.navbar-brand {
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.navbar-default {
+    background-color: #0D6759;
+}
+
+body button, label, p, h1, h2, h3, h4, h5, h6 {
+    color: #A0C55F;
+}
+body h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+body {
+    background-color: #0B2E59;
+}
+.navbar {
+    border: solid 1px #0D6759;
+}
+
+.btn-success {
+    background-color: #714D8F;
+    border-color: #714D8F;
+}
+.btn-success:hover {
+    background-color: #2A044A;
+    border-color: #2A044A;
+}
+
+.btn-primary {
+
+}
